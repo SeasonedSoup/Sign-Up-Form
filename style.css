@@ -1,0 +1,21 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+}
+
+.sidebar {
+    background-image: url(images/tomas-malik-ylEcpQDbsCM-unsplash.jpg);
+    background-size: cover;
+    flex-grow: 1;
+}
+
+.signup-form {
+    background-color: white;
+    height: 100vh;
+    flex-grow: 2;
+}
