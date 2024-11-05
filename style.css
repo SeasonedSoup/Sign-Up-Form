@@ -17,6 +17,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    overflow: auto;
 }
 
 .title {
@@ -44,11 +45,23 @@ footer {
     font-size: 1em;
 }
 
-a {
+a.reference {
     color: white;
 }
-.signup-form {
+.main {
     background-color: white;
     height: 100vh;
     flex-grow: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.signup-form {
+    height: 400px;
+    width: auto;
+    display: flex;
+    box-shadow: black 1px 1px;
+    border: 5px solid red;
 }
