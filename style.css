@@ -58,8 +58,13 @@ p.footer {
     font-size: 1em;
 }
 
-a.reference {
+a.reference:link, a.reference:visited {
     color: white;
+    text-decoration: none;
+}
+
+a.reference:hover {
+    text-decoration: underline;
 }
 .main {
     height: 100%;
@@ -137,4 +142,13 @@ button {
     width: 200px;
     border: none;
     margin-top: 50px;
+}
+
+a.log-in:link, a.log-in:visited {
+    color: #596D48;
+    text-decoration: none;
+}
+
+a.log-in:hover {
+    text-decoration: underline;
 }
