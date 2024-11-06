@@ -1,7 +1,17 @@
-* {
+*, *::after, *::before {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+}
+
+@font-face {
+    font-family: norse-bold;
+    src: url("fonts/Norse-Bold.otf");
+}
+
+@font-face {
+    font-family: norwester;
+    src: url("fonts/norwester.otf" );
 }
 
 body {
@@ -36,8 +46,9 @@ body {
     padding: 20px;
 }
 span.odin {
-    font-size: 4rem;
+    font-size: 8rem;
     color: white;
+    font-family: "norse-bold";
 }
 
 p.footer {
@@ -53,13 +64,14 @@ a.reference {
 .main {
     height: 100%;
     max-width:100%;
-    padding: 50px;
+    padding: 0 60px;
 
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 10px;
+    
+    gap: 50px;
 }
 
 p.text {
@@ -71,8 +83,9 @@ p.text {
 .sign-up {
     display: inline-block;
 }
-form.signup-form {
-    margin-top: 40px;
+form {
+    max-width: 100%;
+
 }
 .input-container {
     height: 400px;
@@ -82,21 +95,46 @@ form.signup-form {
 
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    gap: 30px;
 }
 
 h1.call-to-action {
-    position: relative;
-    bottom: 20px;
-    left: 20px;
+   margin: 10px 30px 20px;
 }
 
 .first-row, .second-row, .third-row {
     display: flex;
-    gap: 50px;
+    gap: 80px;
+    margin-left: 30px;
 }
 .input {
     display: flex;
     flex-direction: column;
 }
 
+input {
+    padding: 10px;
+    border-radius: 2px;
+    border: 1px solid lightgray;
+    width: 350px;
+}
+
+input:focus {
+    outline-color: royalblue;
+    box-shadow: 1px 1px 2px 2px gray;
+}
+
+input[type="password"]:invalid {
+    outline-color: red;
+}
+
+button {
+    border-radius: 5px;
+    background-color: #596D48;
+    color: white;
+    font-weight: 600;
+    padding: 15px;
+    width: 200px;
+    border: none;
+    margin-top: 50px;
+}
